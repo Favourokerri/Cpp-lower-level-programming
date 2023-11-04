@@ -1,0 +1,26 @@
+#include <iostream>
+
+/**
+ * declaration of arrays in c++
+ * how to copy arrays
+ *
+ */
+
+int main(void)
+{
+	int a[10] = {1, 2, 3, 5, 6, 7, 8, 9};
+	int v[10];
+	
+	for(auto i =0; i < 8; i++)
+	{
+		v[i] = a[i];
+		std::cout<<v[i] <<"\n";
+	}
+
+	// another simpler way to run for loops
+	for(auto x:a)
+	{
+		std::cout<<x;
+	}
+	return 0;
+}
