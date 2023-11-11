@@ -21,7 +21,7 @@ int main()
 		if (letter == vowel[i])
 		{
 			cout << letter << " is a vowel\a "<< endl;
-			is_vowel = true;
+			nclude <cctype> // for toloweris_vowel = true;
 			break;
 		}
 	}
