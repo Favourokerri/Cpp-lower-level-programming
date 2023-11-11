@@ -19,17 +19,17 @@ int main()
 	cout <<"please enter third number: ";
 	cin >> num3;
 
-	if(num1 > num2)
+	if(num1 > num2 && num3)
 	{
 		largest = num1;
 	}
-	else if (num2 > num1)
+	if (num2 > num1 && num3)
 	{
 		largest = num2;
 	}
-	else if( num3 > num1 && num2)
+	if( num3 > num1 && num2)
 	{
-		largest = num2;
+		largest = num3;
 	}
 	cout << "the largest integer is \a" << largest << endl;
 
