@@ -1,19 +1,18 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main()
-{
-	int number, factorial;
-	factorial = 1;
-	cout<<"Enter the number of factorial";
-	cin >> number;
-	while (number >=1)
-	{
-		cout << "Number="<<number <<endl;
-		factorial = factorial * number;
-		number = number - 1;
-	}
-	cout <<"Factorial is="<<factorial<<endl;
+int main() {
+    int num = 0;
+    cout << "Enter a number to calculate factorial: ";
+    cin >> num;
 
-	return (0);
+    int result = 1;
+    
+    for (int i = num; i > 1; i--) {
+        result *= i;
+    }
+    
+    cout << "Factorial of " << num << " is: " << result << endl;
+
+    return 0;
 }
