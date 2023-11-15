@@ -7,13 +7,12 @@ using namespace std;
  * parameter passed to it except it is been 
  * passed by refrence like below
  */
-void refrence(int &a, int b)
-{
+void refrence(int &a, int b) {
 	a=a+10;
 	b=b+10;
 }
-int main()
-{
+
+int main() {
 	int a = 1;
 	int b = 1;
 
